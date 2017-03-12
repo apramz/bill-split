@@ -1,0 +1,54 @@
+/********************************
+*********************************
+			BODY
+*********************************
+*********************************/
+
+body {
+	background-color: #fcfcfc;
+	font-family: "Roboto";
+	margin: 0;
+}
+
+/********************************
+*********************************
+			NAVBAR
+*********************************
+*********************************/
+
+#header {
+	background-color: #27ae60;
+	margin: 0 auto 0;
+	padding-top: 0px;
+	position: relative;
+}
+
+#header p {
+	font-size: 24px;
+	margin: 0px;
+	padding: 8px;
+	padding-left: 15px;
+	font-weight: 500;
+	color: white;
+}
+
+/********************************
+*********************************
+			CONTENT
+*********************************
+*********************************/
+.intro {
+	text-align: center;
+}
+
+.intro h1 {
+    font-size: 19px;
+    font-weight: 400;
+}
+
+.btn.btn-success {
+	background-color: #27ae60;
+    border-color: #27ae60;
+}
+
+.container
