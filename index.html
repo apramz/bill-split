@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>billsplit</title>
+		<title>Split Bills Right - BillSplit</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="icon" href="images/favicon.png">
 		<link rel="stylesheet" href="styles/bootstrap/css/bootstrap.min.css">
@@ -20,6 +20,15 @@
 			<p>Start by adding friends to see your savings below</p>
 		</div>
 		<div class="container">
+			<div class="row">
+				<div class="item-count-select phone-col-12 tablet-col-6 desktop-col-4">
+					<select id="item-count-selector">
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+					</select>
+				</div>
+			</div>
 			<div class="row">
 				<div class="phone-col-12 tablet-col-6 desktop-col-4">
 					<form class="bill-info-form" action="/my-handling-form-page" method="post">
