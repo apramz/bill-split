@@ -65,7 +65,7 @@ body {
     box-shadow: none;
     background: transparent;
     background-image: none;
-    -webkit-appearance: initial;
+    /*-webkit-appearance: initial;*/
     font-weight: 500;
     color: #27ae60;
     font-size: 20px;	
