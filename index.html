@@ -3,6 +3,7 @@
 	<head>
 		<title>billsplit</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="icon" href="images/favicon.png">
 		<link rel="stylesheet" href="styles/bootstrap/css/bootstrap.min.css">
 		<link rel="stylesheet" href="styles/main.css" type="text/css">
 	</head>
@@ -10,15 +11,34 @@
 		<nav id="header" class="navbar navbar-default navbar-fixed-top">
 			<div class="container-fluid">
 				<div class="navbar-header">
-					<p>billsplit</p>
+					<a href="index.html"><p>billsplit</p></a>
 				</div>
 			</div>
 		</nav>
 		<div class="container intro">
 			<h1>It's just you on the bill!</h1>
 			<p>Start by adding friends to see your savings below</p>
-			<button href="#" type="button" class="btn btn-success">Add Friend</button>
+			<a href="tool.html"><button type="button" class="btn btn-success">Add Friend</button></a>
 		</div>
-			
+		<div class="container">
+			<div class="row">
+				<div class="phone-col-12 tablet-col-6 desktop-col-4">
+					<form class="bill-info-form" action="/my-handling-form-page" method="post">
+						<div>
+							<input type="text" id="name" name="user_name" placeholder="Name">
+						</div>
+						<div>
+							<input type="text" id="item_1_price" name="item_1_price" placeholder="1st Item Price">
+						</div>
+						<div>
+							<input type="text" id="item_2_price" name="item_2_price" placeholder="2nd Item Price">
+						</div>
+						<div class="button">
+							<button type="submit">ADD TO BILL</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
 	</body>
 </html>
