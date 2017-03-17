@@ -8,6 +8,7 @@ body {
 	background-color: #fcfcfc;
 	font-family: "Roboto";
 	margin: 0;
+	text-align: center;
 }
 
 /********************************
@@ -43,7 +44,7 @@ body {
 
 .intro h1 {
     font-size: 19px;
-    font-weight: 400;
+    font-weight: 500;
 }
 
 .btn.btn-success {
@@ -55,22 +56,6 @@ body {
 			form
 *********************************/
 
-.item-count-select {
-	text-align: center;
-}
-
-#item-count-selector {
-    padding: 8px 10px;
-    border: 1px solid #27ae60;
-    box-shadow: none;
-    background: transparent;
-    background-image: none;
-    -webkit-appearance: menulist;
-    font-weight: 500;
-    color: #27ae60;
-    font-size: 20px;	
-}
-
 form {
 	padding: 15px;
 }
@@ -78,6 +63,7 @@ form {
 .bill-info-form {
 	text-align: center;
 	margin: 0 15px 15px;
+	display: inline;
 }
 
 input {
@@ -101,3 +87,33 @@ form button {
 form button:hover {
     background-color: #2ecc71;
 }
+
+#add-input {
+	width: 30px;
+    height: 30px;
+    text-align: center;
+    padding: 0px 0 2px;
+    font-size: 18px;
+    line-height: 1.428571429;
+    border-radius: 15px;
+    border: 2px #27ae60 solid;
+    background-color: white;
+    color: #27ae60;
+    font-weight: 600;
+}
+
+/*for bigger
+#add-input {
+	width: 40px;
+    height: 40px;
+    text-align: center;
+    padding: 0px 0 2px;
+    font-size: 24px;
+    line-height: 1.428571429;
+    border-radius: 24px;
+    border: 3px #27ae60 solid;
+    background-color: white;
+    color: #27ae60;
+    font-weight: 600;
+}
+*/

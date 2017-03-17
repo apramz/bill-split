@@ -18,36 +18,34 @@
 		</nav>
 		<div class="container intro">
 			<h1>It's just you on the bill</h1>
-			<p>Start by adding friends to see your savings below</p>
+			<p>Add friends to see your savings below</p>
 		</div>
 		<div class="container">
 			<div class="row">
-				<div class="item-count-select phone-col-12 tablet-col-6 desktop-col-4">
-					<select id="item-count-selector">
-						<option value="1">1</option>
-						<option value="2">2</option>
-						<option value="3">3</option>
-					</select>
-				</div>
-			</div>
-			<div class="row">
 				<div class="phone-col-12 tablet-col-6 desktop-col-4">
 					<form class="bill-info-form" action="/my-handling-form-page" method="post">
-						<div>
-							<input type="text" id="name" name="user_name" placeholder="Name">
+						<div class="container" id="input-fields">
+							<div>
+								<input type="text" id="name" name="user_name" placeholder="Name">
+							</div>
+							<div>
+								<input type="number" min="0.01" step="0.01" id="item_1_price" name="item_1_price" placeholder="1st Item Price ($)">
+							</div>
 						</div>
-						<div>
-							<input type="number" min="0.01" step="0.01" id="item_1_price" name="item_1_price" placeholder="1st Item Price ($)">
-						</div>
-						<div>
-							<input type="number" min="0.01" step="0.01" id="item_2_price" name="item_2_price" placeholder="2nd Item Price ($)">
+						<div class="button">
+							<button type="button" id="add-input">+</button>
 						</div>
 						<div class="button">
 							<button type="submit">ADD TO BILL</button>
+							<button type="submit">DONE ADDING</button>
 						</div>
 					</form>
 				</div>
 			</div>
 		</div>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script src="styles/bootstrap/js/bootstrap.min.js"></script>
+		<script src="scripts/app.js"></script>
 	</body>
 </html>
