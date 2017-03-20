@@ -6,11 +6,10 @@ var main = function(){
 //Add Fields to Form Function
 	var addFields = function(){
 		var container = $('#input-fields');
-		var input = document.createElement("input");
-		input.type = "number";
-		input.min = "0.01";
-		input.step = "0.01";
-		container.append(input);
+		var input_div = document.createElement("div");
+		var input_number = document.getElementById('input-fields').children.length;
+		input_div.innerHTML = "<input type='number' min='0.01' step='0.01' id='item_"+input_number+"_price' name='item_"+input_number+"_price' placeholder='Item #"+input_number+" Price ($)'>";
+		container.append(input_div);
 	}
 
 //Binding - Adding Fields to Form Button Function
