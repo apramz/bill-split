@@ -9,7 +9,7 @@ var main = function(){
 	}
 
 /********************************
-			FORM
+			FORM TOOLS
 *********************************/
 //Add Fields to Form - Function
 	var addFields = function(){
@@ -20,18 +20,45 @@ var main = function(){
 		container.append(input_div);
 	}
 
-//[Binding] - Adding Fields to Form Button - Function
+//[onClick] - Adding Fields to Form Button - Function
 	$('#add-input').click(function(){
 		addFields();
 	});
 
-//[Binding] - Clear Form Fields After Button - Function
+//[onClick] - Clear Form Fields After Button - Function
 	$('#add-bill').click(function(){
+		createVariables();
 		var number_fields = document.getElementById('input-fields').children.length;
 		for (i = 0; i < number_fields; i++) {
 			document.getElementById('bill-info-form').elements[i].value='';
 		}
 	})
+
+/********************************
+		FORM DATA SUBMISSION
+*********************************/
+//Count Number of Input Fields - Function
+	var countFields = function(){
+		var number_fields = document.getElementById('input-fields').children.length;
+		return number_fields;	
+	}
+
+//Return Inner Value of Input Field - Function
+
+//Creating Bill Item Variables - Function
+	var createVariables = function(){
+		var item_values = [];
+		var number_fields = countFields();
+		for (i = 0; i < number_fields; i++) {
+			var item = document.getElementById('input-fields').children[i].children[0].value;
+			item_values.push(item);
+			console.log(item_values);
+		};
+		return item_values;
+	}
+
+//[onClick] - Create Bill Item Variables Button - Function
+
 
 };
 
