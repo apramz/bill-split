@@ -23,7 +23,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="phone-col-12 tablet-col-6 desktop-col-4">
-					<form class="bill-info-form" action="/my-handling-form-page" method="post">
+					<form id="bill-info-form" class="bill-info-form" action="/my-handling-form-page" method="post">
 						<div class="container" id="input-fields">
 							<div>
 								<input type="text" id="name" name="user_name" placeholder="Name">
@@ -36,7 +36,7 @@
 							<button type="button" id="add-input">+</button>
 						</div>
 						<div class="button">
-							<button type="submit">ADD TO BILL</button>
+							<button type="button" id="add-bill">ADD TO BILL</button>
 							<button type="submit">DONE ADDING</button>
 						</div>
 					</form>

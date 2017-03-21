@@ -3,7 +3,15 @@ var main = function(){
 /********************************
 			TOOLBOX
 *********************************/
-//Add Fields to Form Function
+//Clears Content of Selected Area - Function
+	var clear = function(content_area) {
+		$('#'+content_area).empty();
+	}
+
+/********************************
+			FORM
+*********************************/
+//Add Fields to Form - Function
 	var addFields = function(){
 		var container = $('#input-fields');
 		var input_div = document.createElement("div");
@@ -12,10 +20,18 @@ var main = function(){
 		container.append(input_div);
 	}
 
-//Binding - Adding Fields to Form Button Function
+//[Binding] - Adding Fields to Form Button - Function
 	$('#add-input').click(function(){
 		addFields();
 	});
+
+//[Binding] - Clear Form Fields After Button - Function
+	$('#add-bill').click(function(){
+		var number_fields = document.getElementById('input-fields').children.length;
+		for (i = 0; i < number_fields; i++) {
+			document.getElementById('bill-info-form').elements[i].value='';
+		}
+	})
 
 };
 
